@@ -49,32 +49,32 @@ class Ciudadano:
         self.__edad = edad
 
 #----------------Metodo---------------------
-def mostrar(self):
-    return print(f'Nombre:{self.__nombre} , Edad:{self.__edad} , Cedula:{self.__cedula}')
+    def mostrar(self):
+        return print(f'Nombre:{self.__nombre} , Edad:{self.__edad} , Cedula:{self.__cedula}')
     
 
-def esMayorDeEdad(self):
-    if self.__edad>=18:
-        return print(f'Es mayor de edad')
-    else:
-        return print(f'Es menor de edad')
-def getMostrar(self):
-    if self.__nombre==None or self.__edad==None or self.__cedula==None:
-        return print('Ingrese datos validos')
-    else:
-        self.__mostrar()
-def getEsMayorDeEdad(self):
-    if self.__edad==None:
-        return print('Ingrese un valor para la edad')
-    else:
-        self.__EsMayorDeEdad()
+    def Mayor(self):
+        if self.__edad>=18:
+            return print(f'Es mayor de edad')
+        else:
+            return print(f'Es menor de edad')
+    def getMostrar(self):
+        if self.__nombre==None or self.__edad==None or self.__cedula==None:
+            return print('Ingrese datos validos')
+        else:
+            self.mostrar()
+    def getMayor(self):
+        if self.__edad==None:
+            return print('Ingrese un valor para la edad')
+        else:
+            self.Mayor()
 
 def main():
-    persona=Ciudadano('Edwin',16,5264654)
-    persona.setNombre('Edwuin')
+    persona = Ciudadano('Edwin',16,5264654)
+    persona.setNombre('Edwin')
     persona.setEdad(16)
     persona.setCedula(5264654)
     persona.getMostrar()
-    persona.getEsMayorDeEdad()
+    persona.getMayor()
 if __name__=='__main__':
     main()
