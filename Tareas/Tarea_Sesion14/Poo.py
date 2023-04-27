@@ -11,7 +11,7 @@ de cedula tenga entre 8 y 10 dígitos y que la edad ingresada sea un número pos
 - Establecer un método "esMayorDeEdad" que verifique si el ciudadano es o no mayor de edad.
 
 '''
-class ciudadano:
+class Ciudadano:
     def __init__(self):
 
         self.__nombre = None
@@ -49,8 +49,32 @@ class ciudadano:
         self.__edad = edad
 
 #----------------Metodo---------------------
-def datos():
-    persona= ciudadano()
+def mostrar(self):
+    return print(f'Nombre:{self.__nombre} , Edad:{self.__edad} , Cedula:{self.__cedula}')
     
+
+def esMayorDeEdad(self):
+    if self.__edad>=18:
+        return print(f'Es mayor de edad')
+    else:
+        return print(f'Es menor de edad')
+def getMostrar(self):
+    if self.__nombre==None or self.__edad==None or self.__cedula==None:
+        return print('Ingrese datos validos')
+    else:
+        self.__mostrar()
+def getEsMayorDeEdad(self):
+    if self.__edad==None:
+        return print('Ingrese un valor para la edad')
+    else:
+        self.__EsMayorDeEdad()
+
 def main():
-    persona = 
+    persona=Ciudadano('Edwin',16,5264654)
+    persona.setNombre('Edwuin')
+    persona.setEdad(16)
+    persona.setCedula(5264654)
+    persona.getMostrar()
+    persona.getEsMayorDeEdad()
+if __name__=='__main__':
+    main()
